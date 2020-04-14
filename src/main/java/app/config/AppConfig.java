@@ -1,6 +1,7 @@
 package main.java.app.config;
 
 import main.java.app.model.Animal;
+import main.java.app.model.Cat;
 import main.java.app.model.Dog;
 import main.java.app.model.Timer;
 import org.springframework.context.annotation.Bean;
@@ -16,10 +17,10 @@ public class AppConfig {
         Dog dog = new Dog();
         return dog;
     }
-    @Bean(name="timer")
-    public Timer getTimer() {
-        Timer timer = new Timer();
-        return timer;
+    @Bean(name="cat")
+    public Cat getCat() {
+        Cat cat = new Cat();
+        return cat;
     }
 
 }
